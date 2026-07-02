@@ -144,19 +144,19 @@ header {
 .btn,
 .btn-card {
   display: inline-block;
-  background: linear-gradient(#B3ABD4);
+  background: #B3ABD4;
   color: white;
   padding: 0.9rem 1.3rem;
   border-radius: 999px;
   font-weight: 700;
-  box-shadow: 0 10px 20px rgba(233, 108, 138, 0.25);
+  box-shadow: 0 10px 20px rgba(179, 171, 212, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover,
 .btn-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 24px rgba(233, 108, 138, 0.32);
+  box-shadow: 0 14px 24px rgba(179, 171, 212, 0.32);
 }
 
 .about-banner {
