@@ -141,10 +141,17 @@ header {
   margin-bottom: 1.2rem;
 }
 
+.hero-text img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 .btn,
 .btn-card {
   display: inline-block;
-  background: #B3ABD4;
+  background: linear-gradient(135deg, #c8c1e8 0%, #a79dce 45%, #8f86bc 100%);
   color: white;
   padding: 0.9rem 1.3rem;
   border-radius: 999px;
@@ -160,8 +167,8 @@ header {
 }
 
 .about-banner {
-  min-height: 360px;
-  padding: 2rem;
+  min-height: 420px;
+  padding: 2.4rem;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -251,6 +258,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  flex: 1;
 }
 
 .card h3 {
@@ -271,7 +279,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.2rem;
+  gap: 0.8rem;
+  margin-top: auto;
 }
 
 .card h4 {
@@ -425,6 +434,7 @@ footer {
   .about-banner {
     justify-content: center;
     padding: 1rem;
+    min-height: 360px;
   }
 
   .card-footer {
