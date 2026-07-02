@@ -447,18 +447,37 @@ footer {
   }
 
   .hero-overlay {
-    padding: 1.2rem;
+    min-height: 70vh;
+    padding: 1rem;
+    align-items: flex-end;
+    background:
+      linear-gradient(180deg, rgba(255, 248, 251, 0.82) 0%, rgba(255, 248, 251, 0.95) 100%),
+      url('../img/fondo pichus.png') center/cover no-repeat;
   }
 
-  .hero-text,
+  .hero-text {
+    width: 100%;
+    padding: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-text img {
+    max-height: 220px;
+    margin: 0 auto 0.5rem;
+  }
+
   .about-content {
     padding: 1.2rem;
+    width: 100%;
   }
 
   .about-banner {
     justify-content: center;
     padding: 1rem;
     min-height: 360px;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.58) 100%),
+      url('../img/fondo mino.png') center/cover no-repeat;
   }
 
   .card-footer {
