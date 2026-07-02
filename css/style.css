@@ -144,7 +144,7 @@ header {
 .btn,
 .btn-card {
   display: inline-block;
-  background: linear-gradient(135deg, #B3ABD4);
+  background: linear-gradient(#B3ABD4);
   color: white;
   padding: 0.9rem 1.3rem;
   border-radius: 999px;
