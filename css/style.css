@@ -144,7 +144,7 @@ header {
 .btn,
 .btn-card {
   display: inline-block;
-  background: linear-gradient(135deg, #ff89a8, var(--pink));
+  background: linear-gradient(135deg, #B3ABD4, var(--pink));
   color: white;
   padding: 0.9rem 1.3rem;
   border-radius: 999px;
