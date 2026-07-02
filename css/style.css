@@ -46,23 +46,23 @@ header {
 }
 
 .navbar {
-  max-width: 1100px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 0.8rem 1.2rem;
+  padding: 0.2rem 0.35rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 0.4rem;
 }
 
 .logo img {
-  height: 120px;
+  height: 92px;
   width: auto;
 }
 
 .menu {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
   flex-wrap: wrap;
   list-style: none;
   margin-left: auto;
@@ -70,10 +70,10 @@ header {
 
 .menu a {
   font-weight: 600;
-  padding: 0.45rem 0.75rem;
+  padding: 0.3rem 0.55rem;
   border-radius: 999px;
   transition: all 0.3s ease;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .menu a:hover {
