@@ -14,6 +14,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 html {
@@ -25,6 +28,9 @@ body {
   background: linear-gradient(135deg, #fff8fb 0%, #ffe9ef 45%, #fff 100%);
   color: var(--text);
   line-height: 1.6;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 img {
@@ -44,6 +50,9 @@ header {
   background: rgba(255, 248, 251, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(179, 171, 212, 0.2);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .navbar {
@@ -108,6 +117,9 @@ header {
     linear-gradient(90deg, rgba(255, 248, 251, 0.96) 0%, rgba(255, 248, 251, 0.88) 34%, rgba(255, 248, 251, 0.2) 100%),
     url('../img/fondo pichus.png') center/cover no-repeat;
   box-shadow: 0 24px 50px rgba(143, 134, 188, 0.16);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .hero-text {
@@ -116,6 +128,9 @@ header {
   padding: 2rem;
   border-radius: 24px;
   box-shadow: 0 12px 30px rgba(143, 134, 188, 0.12);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .eyebrow {
@@ -126,6 +141,9 @@ header {
   letter-spacing: 0.2em;
   color: var(--pink);
   margin-bottom: 0.6rem;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .hero-text h1 {
@@ -166,6 +184,9 @@ header {
   font-weight: 700;
   box-shadow: 0 10px 20px rgba(179, 171, 212, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .btn:hover,
@@ -194,6 +215,9 @@ header {
   padding: 2rem 2.2rem;
   border-radius: 24px;
   box-shadow: 0 12px 30px rgba(143, 134, 188, 0.12);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .about .eyebrow {
@@ -237,6 +261,9 @@ header {
   border: 1px solid rgba(179, 171, 212, 0.25);
   box-shadow: 0 16px 36px rgba(143, 134, 188, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .card:hover {
@@ -276,6 +303,9 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .card-content {
@@ -320,6 +350,9 @@ table {
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(143, 134, 188, 0.1);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 th,
@@ -327,6 +360,9 @@ td {
   padding: 1rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
+  forced-color-adjust: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 th {
@@ -485,5 +521,39 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.6rem;
+  }
+}
+
+/* Fuerza colores en modo claro incluso si el navegador o dispositivo intenta forzar oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #fff8fb 0%, #ffe9ef 45%, #fff 100%);
+    color: var(--text);
+  }
+  
+  header {
+    background: rgba(255, 248, 251, 0.95);
+    border-bottom-color: rgba(179, 171, 212, 0.2);
+  }
+  
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(255, 248, 251, 0.96) 0%, rgba(255, 248, 251, 0.88) 34%, rgba(255, 248, 251, 0.2) 100%),
+      url('../img/fondo pichus.png') center/cover no-repeat;
+  }
+  
+  .hero-text {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+  }
+  
+  .card {
+    background: linear-gradient(180deg, #fff 0%, #fff8fb 100%);
+    border-color: rgba(179, 171, 212, 0.25);
+    color: var(--text);
   }
 }
