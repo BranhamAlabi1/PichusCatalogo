@@ -3,8 +3,8 @@
 // whatsapp: digits only with country code, e.g. "503701234567"
 const PICHUS_CONTACT = {
   whatsapp: "",
-  instagram: "",
-  facebook: "",
+  instagram: "https://www.instagram.com/pichus.sv_/",
+  facebook: "https://www.facebook.com/profile.php?id=61591234725969",
 };
 
 // ====== CONTACT LINKS ======
@@ -19,9 +19,8 @@ function wireWhatsAppLinks() {
     const message = link.getAttribute("data-wa") || "";
     if (PICHUS_CONTACT.whatsapp) {
       link.setAttribute("href", buildWhatsAppUrl(PICHUS_CONTACT.whatsapp, message));
-    } else {
-      link.setAttribute("href", "#contacto");
     }
+    // Sin número en config: se conserva el href authoring (links wa.link originales del sitio).
   });
 }
 
