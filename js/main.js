@@ -2,7 +2,7 @@
 // Complete with the real commercial data. Leave "" to disable that channel.
 // whatsapp: digits only with country code, e.g. "503701234567"
 const PICHUS_CONTACT = {
-  whatsapp: "",
+  whatsapp: "50373684825",
   instagram: "https://www.instagram.com/pichus.sv_/",
   facebook: "https://www.facebook.com/profile.php?id=61591234725969",
 };
