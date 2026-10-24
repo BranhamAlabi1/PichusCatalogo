@@ -106,6 +106,9 @@ Tokens: `--lilac-900 #3f2d63` (headings), `--lilac-700 #6c4f9e` (primary), `--li
 - [x] R0 exploration: index.html + css/style.css read; all 12 images inspected visually.
 - [x] R1 backups: `_backup/index.original.html`, `_backup/style.original.css`.
 - [x] R2 image renames: 6 files URL-safe (mapping above).
+- [x] Post-launch fixes (user feedback): card-image background white (no color cut), size/price table always a real table with aligned Talla/Precio headers, gallery converted to uniform 1:1 grid + vanilla lightbox (click/Enter opens, ×/Escape/backdrop closes, focus restored).
+- [x] Git: `.git` unlocked via `safe.directory` (user authorized); root commit `97d4d9c` "feat: redesign PICHUS catalog with responsive lila theme, lightbox gallery and a11y" — 22 files, 2845 insertions. Working tree clean. No remote configured.
+- [x] New discovery at commit time: `img/` now holds 16 photos — user added `dani_collar.jpg`, `minno_Amarillo.jpg`, `nina.1.1.jpg`, `sannie-blue.jpeg` (not yet referenced by the site).
 - [x] T1–T8 implemented by three bounded delegated writers (transport note: one very large single-writer prompt twice dropped the socket; splitting into per-file writers succeeded).
   - `js/main.js` (3776 bytes): PICHUS_CONTACT config, wa.me builder, data-wa/data-social wiring, mobile menu (is-open/aria-expanded/Escape/matchMedia 900px), reveal w/ reduced-motion respect. `node --check` OK.
   - `index.html` (16994 bytes, 495 lines): full section set, 12/12 images, 0 href="#", alt+width+height everywhere, OG/Twitter/theme-color, skip link, data-wa x8, data-social x2, reveal x4.
