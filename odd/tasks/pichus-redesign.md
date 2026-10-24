@@ -3,7 +3,7 @@
 - Project: catalgo  pichus (D:\Pichu pets\Catalgo  Pichus)
 - Created: 2026-10-24
 - Route: **delegated direct (one writer)** — writer trigger fired: implementation touches 3 non-trivial files (`index.html`, `css/style.css`, new `js/main.js`). Mapping/reading done inline (2 source files) before delegation.
-- Delivery: the folder is NOT a git repository → work-unit commits and PR chains are N/A. Rollback boundary = `_backup/` snapshot (user brief rule 4). If the user later inits git, T1–T8 map to work-unit commits.
+- Delivery: work-unit commits on branch `main` (pushed to origin). Rollback = git history (originals preserved in `97d4d9c:_backup/`; `_backup/` and `.atl/` removed from disk+repo at user request 2026-10-24).
 
 ## Objective
 
